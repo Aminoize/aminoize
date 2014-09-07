@@ -5,4 +5,4 @@ deploy:
   provider: heroku
   app: aminoize
   api_key:
-    secure: "scnzVH1dQmhzhiANxOZNtKlliLkdZvKx5BWshatU8RH7kKIbmOejlqJSrROiLtM3pRsC4btEMuxKLk6r0VAH60fdBdbLu8dk/LVxAbfnBQh7iRVkqMP0n+9XKq+MX7bpsikB2Fz0qlPbiSQ9YAEOW4tXFtI+Crj5UrnkJ5nnklk="
+    secure: scnzVH1dQmhzhiANxOZNtKlliLkdZvKx5BWshatU8RH7kKIbmOejlqJSrROiLtM3pRsC4btEMuxKLk6r0VAH60fdBdbLu8dk/LVxAbfnBQh7iRVkqMP0n+9XKq+MX7bpsikB2Fz0qlPbiSQ9YAEOW4tXFtI+Crj5UrnkJ5nnklk=
