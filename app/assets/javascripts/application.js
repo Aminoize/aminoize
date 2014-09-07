@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
+//= require backbone.marionette
 //= require aminoize
 //= require_tree ../templates
 //= require_tree ./models
