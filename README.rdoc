@@ -1,1 +1,3 @@
-Github gitter integration test
+== README
+
+{<img src="https://travis-ci.org/Aminoize/aminoize.svg" alt="Build Status"}
