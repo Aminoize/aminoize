@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140907194311) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "foods", force: true do |t|
     t.float    "tryptophan"
     t.float    "rectified_tryptophan"
