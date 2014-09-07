@@ -3,7 +3,9 @@ window.Aminoize =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: -> 
+  				new Aminoize.Routers.Foods
+  				Backbone.history.start()
 
 $(document).ready ->
   Aminoize.initialize()
