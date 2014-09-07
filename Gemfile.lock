@@ -211,11 +211,8 @@ DEPENDENCIES
   jazz_hands
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
   marionette-rails
-=======
   pg
->>>>>>> 95408b27f939a5afd9326274b6ba5bab26260e3b
   rails (= 4.1.2)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
