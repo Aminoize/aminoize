@@ -1,1 +1,1 @@
-Github pivotal tracker test
+Github gitter integration test
