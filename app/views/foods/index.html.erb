@@ -8,4 +8,6 @@
   <%= f.lysine %>
   <%= f.rectified_lysine %>
   <% end %>
+
+  <%= content_tag :div, "", id: "acids_chart", data: {acids: @acids} %>
 </div>
