@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116190354) do
+ActiveRecord::Schema.define(version: 20141129224250) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "acids", force: true do |t|
+  create_table "foods", force: true do |t|
     t.float    "tryptophan"
     t.float    "rectified_tryptophan"
     t.float    "methionine"
@@ -27,11 +27,6 @@ ActiveRecord::Schema.define(version: 20141116190354) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "food_id"
-  end
-
-  create_table "foods", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "name"
   end
 

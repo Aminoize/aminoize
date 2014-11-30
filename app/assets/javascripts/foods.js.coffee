@@ -1,7 +1,7 @@
 jQuery ->
   Morris.Bar
-    element: 'acids_chart'
-    data: $('acids_chart').data('acids')
-    xkey: 'y'
-    ykeys: ['a']
+    element: 'foods_chart'
+    data: $('#foods_chart').data('foods')
+    xkey: ''
+    ykeys: ['tryptophan', 'rectified_tryptophan', 'methionine', 'phenylalanine', 'rectified_phenylalanine', 'lysine', 'rectified_lysine']
     labels: ['Series a']
