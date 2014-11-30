@@ -1,11 +1,3 @@
 <div>
-  <% @foods.each do |f| %>
-  <%= f.tryptophan %>
-  <%= f.rectified_tryptophan %>
-  <%= f.methionine %>
-  <%= f.phenylalanine %>
-  <%= f.rectified_phenylalanine %>
-  <%= f.lysine %>
-  <%= f.rectified_lysine %>
-  <% end %>
+  <%= content_tag :div, "", id: "foods_chart", data: {foods: @foods} %>
 </div>
