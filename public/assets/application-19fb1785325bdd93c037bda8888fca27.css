@@ -1,0 +1,55 @@
+/* line 1, /Users/Thomas/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart {
+  width: 100%;
+}
+
+/* line 3, /Users/Thomas/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart li {
+  border-radius: 4px 4px 0 0;
+  /* Remember vendor prefixes */
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  /* Remember vendor prefixes */
+  display: block;
+  height: 125px;
+  padding: 25px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/* line 14, /Users/Thomas/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .axis {
+  display: none;
+  top: -25px;
+  width: 11%;
+}
+
+/* line 20, /Users/Thomas/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .label {
+  background: #eaeaea;
+  margin: -.6em 0 65px 0;
+}
+
+/* line 25, /Users/Thomas/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .percent {
+  font-size: 30px;
+  letter-spacing: -3px;
+  opacity: .4;
+  width: 100%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

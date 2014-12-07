@@ -1,3 +1,18 @@
-<div>
-  <%= content_tag :div, "", id: "foods_chart", data: {foods: @foods} %>
-</div>
+<ul>
+  <li class="chart">
+    <div class="label">100%</div>
+    <div class="label">75%</div>
+    <div class="label">50%</div>
+    <div class="label">25%</div>
+    <div class="label">0%</div>
+  </li>
+  <% @foods.each do |a| %>
+    <li><%= a.tryptophan %></li>
+    <li><%= a.rectified_tryptophan %></li>
+    <li><%= a.methionine %></li>
+    <li><%= a.phenylalanine %></li>
+    <li><%= a.rectified_phenylalanine %></li>
+    <li><%= a.lysine %></li>
+    <li><%= a.rectified_lysine %></li>
+  <% end %>
+</ul>
