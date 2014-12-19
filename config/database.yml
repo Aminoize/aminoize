@@ -13,3 +13,10 @@ test:
   pool: 5
   username:
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: aminoize_production
+  pool: 5
+  password:
