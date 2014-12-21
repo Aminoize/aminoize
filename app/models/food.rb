@@ -1,3 +1,11 @@
 class Food < ActiveRecord::Base
-  has_one :acid
+
+  def self.text_search(query)
+    if query.present?
+      where("name ilike :q or content ilike :q", q: "%#{query}%")
+    else
+      where(nil)
+    end
+  end
+
 end
