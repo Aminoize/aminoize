@@ -1,46 +1,8 @@
-<ul class="chart">
-  <li >
-    <div class="label">100%</div>
-    <div class="label">75%</div>
-    <div class="label">50%</div>
-    <div class="label">25%</div>
-    <div class="label">0%</div>
-  </li>
-  <% @foods.each do |a| %>
-    <li class="teal" style="height:95%;">
-      <div class="percent"><%= a.tryptophan %></div>
-      <div class="acid-name">Tryptophan</div>
-    </li>
-    <li class="orange" style="height:95%;">
-      <div class="percent"><%= a.rectified_tryptophan %></div>
-      <div class="acid-name">Rectified Tryptophan</div>
-    </li>
-    <li class="salmon" style="height:95%;">
-      <div class="percent"><%= a.methionine %></div>
-      <div class="acid-name">Methionine </div>
-    </li>
-    <li class="lime" style="height:95%;">
-      <div class="percent"><%= a.phenylalanine %></div>
-      <div class="acid-name">Phenylalanine </div>
-    </li>
-    <li class="peach" style="height:95%;">
-      <div class="percent"><%= a.rectified_phenylalanine %></div>
-      <div class="acid-name">Rectified Phenylalanine </div>
-    </li>
-    <li class="grape" style="height:95%;">
-      <div class="percent"><%= a.lysine %></div>
-      <div class="acid-name">Lysine </div>
-    </li>
-    <li class="blue" style="height:95%;">
-      <div class="percent"><%= a.rectified_lysine %></div>
-      <div class="acid-name"> Rectified Lysine </div>
-    </li>
-  <% end %>
-</ul>
-
 <%= form_tag foods_path, method: :get do %>
   <p>
     <%= text_field_tag :search, params[:query] %>
     <%= submit_tag "Aminoize!", name: nil %>
   </p>
 <% end %>
+
+<%= render 'chart' %>
