@@ -5,4 +5,10 @@
   </p>
 <% end %>
 
-<%= render 'chart' %>
+<div id="foods">
+<% @foods.each do |food| %>
+  <h2>
+    <%= link_to food.name, food %>
+  </h2>
+<% end %>
+</div>

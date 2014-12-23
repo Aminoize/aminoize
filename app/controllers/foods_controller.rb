@@ -1,7 +1,11 @@
 class FoodsController < ApplicationController
 
-	def index
-    @foods = Food.text_search(params[:query])
-	end
+  def index
+    if params[:search]
+      @foods = Food.search(params[:search]).order("created_at DESC")
+    else
+      @posts = Food.all.order('created_at DESC')
+    end
+  end
 
 end
