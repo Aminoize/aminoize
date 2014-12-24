@@ -6,9 +6,20 @@
 <% end %>
 
 <div id="foods">
-<% @foods.each do |food| %>
-  <h2>
-    <%= link_to food.name, food %>
-  </h2>
-<% end %>
+  <% if @foods != nil %>
+    <% @foods.each do |food| %>
+      <h2>
+        <%= food.name %>
+        <%= food.tryptophan %>
+        <%= food.rectified_tryptophan %>
+        <%= food.methionine %>
+        <%= food.phenylalanine %>
+        <%= food.rectified_phenylalanine %>
+        <%= food.lysine %>
+        <%= food.rectified_lysine %>
+      </h2>
+    <% end %>
+  <% else %>
+    <%= "Whole Soybean" %>
+  <% end %>
 </div>

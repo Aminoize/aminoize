@@ -4,7 +4,7 @@ class FoodsController < ApplicationController
     if params[:search]
       @foods = Food.search(params[:search]).order("created_at DESC")
     else
-      @posts = Food.all.order('created_at DESC')
+      @foods = nil
     end
   end
 
