@@ -1,3 +1,5 @@
 == README
 
 {<img src="https://travis-ci.org/Aminoize/aminoize.svg" alt="Build Status"/>}[https://travis-ci.org/Aminoize/aminoize]
+
+Run tests: rake test --all

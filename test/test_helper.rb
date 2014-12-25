@@ -7,5 +7,18 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
-  # Add more helper methods to be used by all tests here...
+  def food_search food
+    fill_in 'search', with: "#{food.name}"
+    click_button 'Aminoize!'
+  end
+
+  def check_acids food
+    page.must_have_content food.tryptophan
+    page.must_have_content food.rectified_tryptophan
+    page.must_have_content food.methionine
+    page.must_have_content food.phenylalanine
+    page.must_have_content food.rectified_phenylalanine
+    page.must_have_content food.lysine
+    page.must_have_content food.rectified_lysine
+  end
 end
