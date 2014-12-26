@@ -1,6 +1,11 @@
 language: ruby
 rvm:
 - 2.0.0
+addons:
+  sauce_connect:
+    username: trosborn
+    access_key:
+      secure: "qRzzBrp6pyEih7eunKTKcVL2EcM+YWzJhuowWd3pOoY5hXclOX6NOTLV4Gt4m6crH6ZgXdzFBDl+HRWuZc6zZW6nK9aNuRUSNB6D25Uv2lJ1/bFUlVfiH5C5lUOd1KKp4gPIdmjN5swz2JM/0CnFC597DqlPMgy0fOkeuBIu89w="
 before_script: bundle exec rake db:create db:migrate
 script: bundle exec rake test
 deploy:
