@@ -19,7 +19,7 @@ end
 
 group :development, :test do
   if ENV['SAUCY']
-    gem 'sauce'
+    gem 'sauce', '~> 3.1.1'
     gem 'sauce-connect'
     gem 'parallel_tests'
   end
