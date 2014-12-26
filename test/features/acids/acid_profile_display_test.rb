@@ -1,6 +1,7 @@
 require 'test_helper'
 
 feature "Acid profile data is displayed on front page" do
+  @selenium
   scenario "I can search up brown rice" do
     load "#{Rails.root}/db/seeds.rb"
     visit root_path
@@ -9,6 +10,7 @@ feature "Acid profile data is displayed on front page" do
     food_search(brown_rice)
     check_acids(brown_rice)
   end
+  @selenium
   scenario "I can consecutively search for two different foods, and see both of them displayed" do
     visit root_path
     brown_rice = foods(:brown_rice)
