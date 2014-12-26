@@ -3,6 +3,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails/capybara'
 require 'minitest/pride'
+require 'rails_helper'
 
 Capybara.default_driver = :selenium
 

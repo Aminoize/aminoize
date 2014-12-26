@@ -1,12 +1,16 @@
 language: ruby
 rvm:
 - 2.0.0
-addons:
-  sauce_connect:
+env:
+  global:
     username: trosborn
     access_key: 0c1eac8c-894c-4a25-ad76-3642fb3c02f7
+    SAUCY: true
+
+addons:
+  sauce_connect: true
+
 before_script: bundle exec rake db:create db:migrate
-script: bundle exec rake test
 deploy:
   provider: heroku
   app: aminoize
