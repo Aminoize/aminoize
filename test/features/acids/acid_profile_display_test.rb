@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 feature "Acid profile data is displayed on front page" do
   scenario "I can search up brown rice" do

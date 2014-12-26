@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'minitest-rails'
+gem 'selenium-webdriver'
 
 group :test do
   gem 'minitest-rails-capybara'

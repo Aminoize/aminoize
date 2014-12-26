@@ -1,0 +1,18 @@
+<button type="button" class="aminos">
+  <% if @food != nil %>
+    <% @food.each do |food| %>
+      <%= content_tag(:p, "#{food.name}") %>
+        <%= food.name %>
+        <%= food.tryptophan %>
+        <%= food.rectified_tryptophan %>
+        <%= food.methionine %>
+        <%= food.phenylalanine %>
+        <%= food.rectified_phenylalanine %>
+        <%= food.lysine %>
+        <%= food.rectified_lysine %>
+      </h2>
+    <% end %>
+  <% else %>
+    <%= "Whole Soybean" %>
+  <% end %>
+</button>

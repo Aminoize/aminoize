@@ -1,25 +1,8 @@
-<%= form_tag foods_path, method: :get do %>
+<%= form_tag foods_path, remote: true, method: :get do %>
   <p>
     <%= text_field_tag :search, params[:query] %>
     <%= submit_tag "Aminoize!", name: nil %>
   </p>
 <% end %>
 
-<div id="foods">
-  <% if @foods != nil %>
-    <% @foods.each do |food| %>
-      <h2>
-        <%= food.name %>
-        <%= food.tryptophan %>
-        <%= food.rectified_tryptophan %>
-        <%= food.methionine %>
-        <%= food.phenylalanine %>
-        <%= food.rectified_phenylalanine %>
-        <%= food.lysine %>
-        <%= food.rectified_lysine %>
-      </h2>
-    <% end %>
-  <% else %>
-    <%= "Whole Soybean" %>
-  <% end %>
-</div>
+<div id="acids"></div>

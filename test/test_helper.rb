@@ -2,13 +2,16 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails/capybara'
+require 'minitest/pride'
+
+Capybara.default_driver = :selenium
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
   def food_search food
-    fill_in 'search', with: "#{food.name}"
+    fill_in 'search', with: food.name
     click_button 'Aminoize!'
   end
 
