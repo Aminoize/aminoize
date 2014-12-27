@@ -15,5 +15,6 @@ gem 'selenium-webdriver'
 group :test do
   gem 'minitest-rails-capybara'
   gem 'launchy'
+  gem 'poltergeist'
 end
 
