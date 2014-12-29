@@ -25,4 +25,14 @@ class ActiveSupport::TestCase
     page.must_have_content food.lysine
     page.must_have_content food.rectified_lysine
   end
+
+  def check_acids_missing food
+    page.wont_have_content food.tryptophan
+    page.wont_have_content food.rectified_tryptophan
+    page.wont_have_content food.methionine
+    page.wont_have_content food.phenylalanine
+    page.wont_have_content food.rectified_phenylalanine
+    page.wont_have_content food.lysine
+    page.wont_have_content food.rectified_lysine
+  end
 end

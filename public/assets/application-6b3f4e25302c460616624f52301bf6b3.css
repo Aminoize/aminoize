@@ -1,0 +1,148 @@
+/* line 11, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart {
+  width: 100%;
+}
+
+/* line 13, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart li {
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  display: block;
+  height: 125px;
+  padding: 25px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/* line 24, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .axis {
+  display: none;
+  top: -25px;
+  width: 11%;
+}
+
+/* line 30, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .label {
+  background: #eaeaea;
+  margin: -.6em 0 65px 0;
+}
+
+/* line 35, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .percent {
+  font-size: 30px;
+  letter-spacing: -3px;
+  opacity: .4;
+  width: 100%;
+}
+
+/* line 42, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .teal {
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+}
+
+/* line 48, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .orange {
+  background: #ff9e2c;
+  border: 1px solid #ff9e2c;
+  background-image: linear-gradient(#ffb55f, #ff9e2c 70%);
+}
+
+/* line 54, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .salmon {
+  background: #ff6b6b;
+  border: 1px solid #ff6b6b;
+  background-image: linear-gradient(#ff9e9e, #ff6b6b 70%);
+}
+
+/* line 60, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .lime {
+  background: #97f464;
+  border: 1px solid #97f464;
+  background-image: linear-gradient(#b7f794, #97f464 70%);
+}
+
+/* line 66, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .peach {
+  background: #ffcd92;
+  border: 1px solid #ffcd92;
+  background-image: linear-gradient(#ffe4c5, #ffcd92 70%);
+}
+
+/* line 72, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .grape {
+  background: #ab64f4;
+  border: 1px solid #ab64f4;
+  background-image: linear-gradient(#c594f7, #ab64f4 70%);
+}
+
+/* line 78, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart .blue {
+  background: lightblue;
+  border: 1px solid lightblue;
+  background-image: linear-gradient(#d4ebf2, lightblue 70%);
+}
+
+/* line 84, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+.chart span {
+  font-size: 30px;
+}
+
+@media (min-width: 700px) {
+  /* line 87, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart {
+    background: url("http://cl.ly/QSpc/bg-chart.png") right top repeat-x;
+    height: 425px;
+    margin: 0 auto -32px;
+  }
+
+  /* line 92, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart li {
+    display: inline-block;
+    height: 425px;
+    margin: 0 1.8% 0 0;
+    width: 10%;
+  }
+
+  /* line 98, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart .axis {
+    display: inline-block;
+  }
+
+  /* line 101, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart .percent {
+    font-size: 40px;
+    position: absolute;
+  }
+
+  /* line 105, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart .acid-name {
+    bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 113, /Users/Thomas/uwrailswinter/aminoize/app/assets/stylesheets/foods.css.scss */
+  .chart .percent {
+    font-size: 62px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
