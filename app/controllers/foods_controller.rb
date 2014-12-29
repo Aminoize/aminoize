@@ -2,9 +2,9 @@ class FoodsController < ApplicationController
 
   def index
     if params[:search]
-      @food = Food.search(params[:search])
+      @foods = Food.search(params[:search])
     else
-      @food = nil
+      @foods = nil
     end
   end
 
