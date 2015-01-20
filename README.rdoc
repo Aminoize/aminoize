@@ -2,7 +2,10 @@
 
 {<img src="https://travis-ci.org/Aminoize/aminoize.svg" alt="Build Status"/>}[https://travis-ci.org/Aminoize/aminoize]
 
-A website to help vegan figure out the amino acid profiles of the food they eat.
+A website to help vegans figure out the amino acid profiles of the food they eat.
 
 You masy visit this site at aminoize.heroku.com
- **It will take at least 20 seconds to load intially as I do not keep any dynos on Heroku running**
+
+
+Setup autocomplete terms:
+rake search_suggestions:index
