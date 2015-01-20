@@ -1,7 +1,5 @@
 class Food < ActiveRecord::Base
-
   def self.search query
-    where("name like ?", "%#{query}%")
+    where("name @@ ?", "%#{query}%")
   end
-
 end
