@@ -11,23 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150119231029) do
+ActiveRecord::Schema.define(version: 20150120234121) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "foods", force: true do |t|
     t.float    "tryptophan"
-    t.float    "rectified_tryptophan"
-    t.float    "methionine"
-    t.float    "phenylalanine"
-    t.float    "rectified_phenylalanine"
+    t.float    "methionine_cysteine"
+    t.float    "phenylalanine_tyrosine"
     t.float    "lysine"
-    t.float    "rectified_lysine"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "food_id"
     t.string   "name"
+    t.float    "histidine"
+    t.float    "isoleucine"
+    t.float    "leucine"
+    t.float    "threonine"
+    t.float    "valine"
   end
 
   create_table "search_suggestions", force: true do |t|
