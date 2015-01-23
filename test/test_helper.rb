@@ -17,22 +17,26 @@ class ActiveSupport::TestCase
   end
 
   def check_acids food
-    page.must_have_content food.tryptophan
-    page.must_have_content food.rectified_tryptophan
-    page.must_have_content food.methionine
-    page.must_have_content food.phenylalanine
-    page.must_have_content food.rectified_phenylalanine
+    page.must_have_content food.histidine
+    page.must_have_content food.isoleucine
+    page.must_have_content food.leucine
     page.must_have_content food.lysine
-    page.must_have_content food.rectified_lysine
+    page.must_have_content food.methionine_cysteine
+    page.must_have_content food.phenylalanine_tyrosine
+    page.must_have_content food.threonine
+    page.must_have_content food.tryptophan
+    page.must_have_content food.valine
   end
 
   def check_acids_missing food
-    page.wont_have_content food.tryptophan
-    page.wont_have_content food.rectified_tryptophan
-    page.wont_have_content food.methionine
-    page.wont_have_content food.phenylalanine
-    page.wont_have_content food.rectified_phenylalanine
+    page.wont_have_content food.histidine
+    page.wont_have_content food.isoleucine
+    page.wont_have_content food.leucine
     page.wont_have_content food.lysine
-    page.wont_have_content food.rectified_lysine
+    page.wont_have_content food.methionine_cysteine
+    page.wont_have_content food.phenylalanine_tyrosine
+    page.wont_have_content food.threonine
+    page.wont_have_content food.tryptophan
+    page.wont_have_content food.valine
   end
 end

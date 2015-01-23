@@ -6,6 +6,8 @@ A website to help vegans figure out the amino acid profiles of the food they eat
 
 You masy visit this site at aminoize.heroku.com
 
+Run tests:
+bundle exec rake test
 
 Setup autocomplete terms:
 rake search_suggestions:index
