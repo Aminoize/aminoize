@@ -1,30 +1,29 @@
 require 'test_helper'
 
 feature "Acid profile data is displayed on front page" do
-  scenario "I can search up brown rice", js: true do
-    load "#{Rails.root}/db/seeds.rb"
+  scenario "I can search up edamame", js: true do
     visit root_path
-    brown_rice = foods(:brown_rice)
+    edamame = foods(:edamame)
 
-    food_search(brown_rice)
-    check_acids(brown_rice)
+    food_search(edamame)
+    check_acids(edamame)
   end
   scenario "I can consecutively search for two different foods, and see both of them displayed", js: true do
     visit root_path
-    brown_rice = foods(:brown_rice)
-    food_search(brown_rice)
-    whole_soybean = foods(:whole_soybean)
-    food_search(whole_soybean)
+    edamame = foods(:edamame)
+    food_search(edamame)
+    soy_milk = foods(:soy_milk)
+    food_search(soy_milk)
 
-    check_acids(brown_rice)
-    check_acids(whole_soybean)
+    check_acids(edamame)
+    check_acids(soy_milk)
   end
   scenario "I can delete a displayed food with a click", js: true do
     visit root_path
-    brown_rice = foods(:brown_rice)
-    food_search(brown_rice)
-    click_on "Brown Rice"
+    edamame = foods(:edamame)
+    food_search(edamame)
+    click_on "Edamame"
 
-    check_acids_missing(brown_rice)
+    check_acids_missing(edamame)
   end
 end

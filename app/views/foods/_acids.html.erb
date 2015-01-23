@@ -3,13 +3,15 @@
     <button type="button" id="<%= food.name.downcase.strip.gsub(' ', '-') %>">
       <%= content_tag(:p, "#{food.name}") %>
       <%= food.name %>
-      <%= food.tryptophan %>
-      <%= food.rectified_tryptophan %>
-      <%= food.methionine %>
-      <%= food.phenylalanine %>
-      <%= food.rectified_phenylalanine %>
+      <%= food.histidine %>
+      <%= food.isoleucine %>
+      <%= food.leucine %>
       <%= food.lysine %>
-      <%= food.rectified_lysine %>
+      <%= food.methionine_cysteine %>
+      <%= food.phenylalanine_tyrosine %>
+      <%= food.threonine %>
+      <%= food.tryptophan %>
+      <%= food.valine %>
     </button>
   <% end %>
 <% else %>

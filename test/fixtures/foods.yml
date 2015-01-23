@@ -1,19 +1,23 @@
-whole_soybean:
-  name: "Whole Soybean"
-  tryptophan: 0.530
-  rectified_tryptophan: 0.324
-  methionine: 1.080
-  phenylalanine: 3.285
-  rectified_phenylalanine: 1.728
-  lysine: 2.429
-  rectified_lysine: 1.301
-brown_rice:
-  name: "Brown Rice"
-  tryptophan: 0.101
-  rectified_tryptophan: 0.075
-  methionine: 0.255
-  phenylalanine: 0.708
-  rectified_phenylalanine: 0.404
-  lysine: 0.303
-  rectified_lysine: 0.303
+edamame:
+  name: Edamame
+  histidine: 207
+  isoleucine: 233
+  leucine: 577
+  lysine: 577
+  methionine_cysteine: 204
+  phenylalanine_tyrosine: 638
+  threonine: 257
+  tryptophan: 98
+  valine: 251
 
+soy_milk:
+  name: Soy Milk
+  histidine: 174
+  isoleucine: 353
+  leucine: 590
+  lysine: 439
+  methionine_cysteine: 213
+  phenylalanine_tyrosine: 644
+  threonine: 277
+  tryptophan: 105
+  valine: 345

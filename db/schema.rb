@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150120234121) do
+ActiveRecord::Schema.define(version: 20150123044813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,13 +23,14 @@ ActiveRecord::Schema.define(version: 20150120234121) do
     t.float    "lysine"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "food_id"
     t.string   "name"
     t.float    "histidine"
     t.float    "isoleucine"
     t.float    "leucine"
     t.float    "threonine"
     t.float    "valine"
+    t.string   "serving_size"
+    t.float    "protein"
   end
 
   create_table "search_suggestions", force: true do |t|
