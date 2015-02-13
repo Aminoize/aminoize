@@ -18,14 +18,13 @@ jQuery(function() {
 
 $(document).submit();
 
-//initializer
 function aminoize(data){
   if (data.length === 1) {
     console.log(data)
   } else if (data.length > 1) {
     console.log("Too many things!!!!");
   } else {
-    console.log("Too few things!!!");
+    console.log("Too few things!!!!");
   };
 };
 
