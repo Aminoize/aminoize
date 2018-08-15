@@ -1,4 +1,4 @@
-<%= form_tag foods_path, remote: true, method: :get do %>
+<%= form_tag foods_path, method: :get do %>
   <p>
     <%= text_field_tag :search, params[:query] %>
     <%= submit_tag "Aminoize!", name: nil %>

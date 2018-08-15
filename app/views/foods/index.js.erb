@@ -1,1 +1,3 @@
-$('.acids').append("<%= j (render 'acids') %>");
+$('form').on('ajax:success', function(data) {
+  alert(data);
+});

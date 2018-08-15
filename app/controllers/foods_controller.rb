@@ -1,11 +1,7 @@
 class FoodsController < ApplicationController
-
   def index
     if params[:search]
-      @foods = Food.search(params[:search])
-    else
-      @foods = nil
+      render json: Food.search(params[:search])
     end
   end
-
 end
